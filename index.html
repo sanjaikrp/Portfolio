@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+    <div class="logo">Sanjai KRP</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#career">Career Summary</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#volunteering">Volunteering</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Sanjai KRP</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#career" onclick="toggleMenu()">Career Summary</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#work" onclick="toggleMenu()">Work</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#achievements" onclick="toggleMenu()">Achievements</a></li>
+                <li><a href="#volunteering" onclick="toggleMenu()">Volunteering</a></li>
+                <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Sanjai KRP profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Sanjai KRP</h1>
+            <p class="section__text__p2">Software Engineer</p>
+            <div class="btn-container">
+                <button 
+                class="btn btn-color-2"
+                onclick="window.open('./assets/resume-example.pdf')"> Download CV
+                </button>
+                <button 
+                class="btn btn-color-1"
+                onclick="location.href='./#contact'"> Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile"
+                class="icon" onclick="location.href='https://linkedin.com/'"/>
+                <img src="./assets/github.png" alt="My Github profile"
+                class="icon" onclick="location.href='https://github.com/'"/>
+            </div>
+        </div>
+    </section>
+    <section id="career">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Career Summary</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assets/Gif_1.gif" alt="Experience icon" class="career-icon"> 
+                    <img src="./assets/Gif_2.gif" alt="Experience icon" class="career-icon"> 
+                    <img src="./assets/Gif_3.gif" alt="Experience icon" class="career-icon"> 
+                    <img src="./assets/Gif_4.gif" alt="Experience icon" class="career-icon"> 
+                    <img src="./assets/Gif_5.gif" alt="Experience icon" class="career-icon"> 
+                    <img src="./assets/Gif_6.gif" alt="Experience icon" class="career-icon"> 
+                    <img src="./assets/Gif_7.gif" alt="Experience icon" class="career-icon"> 
+                    <div class="work-info">
+                         <div class="text-container">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#about'">
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" 
+                alt="Profile picture"
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png"
+                         alt="Experience icon"
+                         class="icon">
+                         <h3>Experience</h3>
+                         <p>2+years <br />Software Engineer</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png"
+                         alt="Education icon"
+                         class="icon">
+                         <h3>Education</h3>
+                         <p>B.Sc. Bachelors Degree <br />M.Sc. Masters Degree</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>SASS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Javascript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>TypeAcript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Material UI</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>C#</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Node JS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Express JS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#work'">
+    </section>
+    <section id="work">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">May 2021 - May 2022</h2>
+                    <p class="extra-line">Bengaluru, Karnataka, India</p>
+                    <div class="work-info">
+                        <a href="https://www.odessainc.com/" target="_blank">
+                            <img src="./assets/Odessa.png" alt="Experience icon" class="work-icon">
+                        </a>  
+                         <h3>Software Engineer Intern</h3>
+                         <div class="text-container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">June 2022 - Present</h2>
+                    <p class="extra-line">Bengaluru, Karnataka, India</p>
+                    <div class="work-info">
+                        <a href="https://www.odessainc.com/" target="_blank">
+                            <img src="./assets/Odessa.png" alt="Experience icon" class="work-icon">
+                        </a>                       
+                         <h3>Software Engineer</h3>
+                         <div class="text-container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="Project 1"
+                        class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project title">Project One</h2>
+                    <div class="btn-container">
+                        <button 
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/'">Github</button>
+                        <button 
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/'">Live Demo</button>
+                    </div>
+                </div>
+                <div class="details-container color container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" alt="Project 2"
+                        class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project title">Project Two</h2>
+                    <div class="btn-container">
+                        <button 
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/'">Github</button>
+                        <button 
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/'">Live Demo</button>
+                    </div>
+                </div>
+                <div class="details-container color container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" alt="Project 3"
+                        class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project title">Project Three</h2>
+                    <div class="btn-container">
+                        <button 
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/'">Github</button>
+                        <button 
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/'">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#achievements'">
+    </section>      
+    <section id="achievements">
+        <p class="section__text__p1">View My</p>
+        <h1 class="title">Achievements</h1>
+        <div class="achievements-details-container">
+            <div class="slide animated">
+                <img class="background-img" src="./assets/BGimage.jpg" alt="Background Image">
+                <div class="slide-content">
+                    <h2>Achievement 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt</p>
+                    <h2>Achievement 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt</p>
+                </div>
+            </div>
+            <div class="slide animated">
+                <img class="background-img" src="./assets/BGimage.jpg" alt="Background Image">
+                <div class="slide-content">
+                    <h2>Achievement 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt</p>
+                    <h2>Achievement 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt</p>
+                    <h2>Achievement 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt</p>
+                </div>
+            </div>
+            <div class="slide animated">
+                <img class="background-img" src="./assets/BGimage.jpg" alt="Background Image">
+                <div class="slide-content">
+                    <h2>Achievement 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt</p>
+                    <h2>Achievement 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt</p>
+                </div>
+            </div>
+            <div class="slide animated">
+                <img class="background-img" src="./assets/BGimage.jpg" alt="Background Image">
+                <div class="slide-content">
+                    <h2>Achievement 4</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt</p>
+                    <h2>Achievement 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt</p>
+                    <h2>Achievement 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt</p>
+                    <h2>Achievement 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt</p>
+                </div>
+            </div>
+            <div class="slidearrow left" onclick="plusSlides(-1)">
+                <img src="./assets/LeftArrow.png" alt="Left Arrow">
+            </div>
+            <div class="slidearrow right" onclick="plusSlides(1)">
+                <img src="./assets/RightArrow.png" alt="Right Arrow">
+            </div> 
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#volunteering'">
+    </section>   
+    <section id="volunteering">
+        <p class="section__text__p1">View My</p>
+        <h1 class="title">Volunteering</h1>
+        <div class="achievements-details-container">
+            <div class="volunteeringSlide animated">
+                <img class="background-img" src="./assets/BGimage.jpg" alt="Background Image">
+                <div class="slide-content">
+                    <h2>Volunteering 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt</p>
+                    <h2>Volunteering 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt</p>
+                </div>
+            </div>
+            <div class="volunteeringSlide animated">
+                <img class="background-img" src="./assets/BGimage.jpg" alt="Background Image">
+                <div class="slide-content">
+                    <h2>Volunteering 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt</p>
+                    <h2>Volunteering 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt</p>
+                    <h2>Volunteering 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt</p>
+                </div>
+            </div>
+            <div class="volunteeringSlide animated">
+                <img class="background-img" src="./assets/BGimage.jpg" alt="Background Image">
+                <div class="slide-content">
+                    <h2>Volunteering 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt</p>
+                    <h2>Volunteering 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt</p>
+                </div>
+            </div>
+            <div class="volunteeringSlide animated">
+                <img class="background-img" src="./assets/BGimage.jpg" alt="Background Image">
+                <div class="slide-content">
+                    <h2>Volunteering 4</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt</p>
+                    <h2>Volunteering 4</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt</p>
+                    <h2>Volunteering 4</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt</p>
+                    <h2>Volunteering 4</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi consequatur saepe ex voluptas doloribus esse, fuga debitis illum ipsum sed nam dolor autem magni ducimus nostrum laudantium quis facilis error illo nesciunt tenetur. Non neque doloremque quasi, deserunt rem quo corporis totam repellendus magni veniam in dolorum eligendi nesciunt</p>
+                </div>
+            </div>
+            <div class="slidearrow left" onclick="plusvolunteeringSlides(-1)">
+                <img src="./assets/LeftArrow.png" alt="Left Arrow">
+            </div>
+            <div class="slidearrow right" onclick="plusvolunteeringSlides(1)">
+                <img src="./assets/RightArrow.png" alt="Right Arrow">
+            </div> 
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#certifications'">
+    </section>  
+    <section id="certifications">
+        <p class="section__text__p1">View My</p>
+        <h1 class="title">Certifications</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <div class="article-container">
+                        <article>
+                            <a href="./assets/certificate.pdf" target="_blank">
+                                <img src="./assets/certificate.png" alt="Experience icon" class="certificate-icon">
+                            </a>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <a href="./assets/certificate.pdf" target="_blank">
+                                <img src="./assets/certificate.png" alt="Experience icon" class="certificate-icon">
+                            </a>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <a href="./assets/certificate.pdf" target="_blank">
+                                <img src="./assets/certificate.png" alt="Experience icon" class="certificate-icon">
+                            </a>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <a href="./assets/certificate.pdf" target="_blank">
+                                <img src="./assets/certificate.png" alt="Experience icon" class="certificate-icon">
+                            </a>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <a href="./assets/certificate.pdf" target="_blank">
+                                <img src="./assets/certificate.png" alt="Experience icon" class="certificate-icon">
+                            </a>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <a href="./assets/certificate.pdf" target="_blank">
+                                <img src="./assets/certificate.png" alt="Experience icon" class="certificate-icon">
+                            </a>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <a href="./assets/certificate.pdf" target="_blank">
+                                <img src="./assets/certificate.png" alt="Experience icon" class="certificate-icon">
+                            </a>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <a href="./assets/certificate.pdf" target="_blank">
+                                <img src="./assets/certificate.png" alt="Experience icon" class="certificate-icon">
+                            </a>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <a href="./assets/certificate.pdf" target="_blank">
+                                <img src="./assets/certificate.png" alt="Experience icon" class="certificate-icon">
+                            </a>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <a href="./assets/certificate.pdf" target="_blank">
+                                <img src="./assets/certificate.png" alt="Experience icon" class="certificate-icon">
+                            </a>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <a href="./assets/certificate.pdf" target="_blank">
+                                <img src="./assets/certificate.png" alt="Experience icon" class="certificate-icon">
+                            </a>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <a href="./assets/certificate.pdf" target="_blank">
+                                <img src="./assets/certificate.png" alt="Experience icon" class="certificate-icon">
+                            </a>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <a href="./assets/certificate.pdf" target="_blank">
+                                <img src="./assets/certificate.png" alt="Experience icon" class="certificate-icon">
+                            </a>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <a href="./assets/certificate.pdf" target="_blank">
+                                <img src="./assets/certificate.png" alt="Experience icon" class="certificate-icon">
+                            </a>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <a href="./assets/certificate.pdf" target="_blank">
+                                <img src="./assets/certificate.png" alt="Experience icon" class="certificate-icon">
+                            </a>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#contact'">
+    </section>    
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                src="./assets/email.png" 
+                alt="Email icon"
+                class="icon contact-icon email-icon">
+                <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="LinkedIn icon"
+                class="icon contact-icon">
+                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="./assets/Phone.png" 
+                alt="Phone icon"
+                class="icon contact-icon phone-icon">
+                <p><a href="#" id="callLink">Phone</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="./assets/Twitter.png" 
+                alt="Twitter icon"
+                class="icon contact-icon twitter-icon">
+                <p><a href="https://www.linkedin.com">Twitter</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-link-container">
+                <ul class="nav-links">
+                    <li><a href="#career">Career Summary</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#volunteering">Volunteering</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Jhon Doe. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
