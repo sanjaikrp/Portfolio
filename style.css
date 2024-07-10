@@ -267,8 +267,9 @@ section {
 }
 
 .career-icon {
-    width: 155px; /* Adjust the size as needed */
-    height: 100px;
+    width: 13.5%; /* Make the image width 100% of its container */
+    height: 90px;
+    border-radius: 15px; /* Curved borders */
 }
 
 .text-container ul {
@@ -278,7 +279,8 @@ section {
 
 .text-container ul li {
     margin-bottom: 10px; /* Add margin between each list item */
-    text-align: left; /* Align text to the left */
+    text-align: justify; /* Justify the text */
+    margin-right: 15px; /* Add margin space for the bullets */
 }
 
 
@@ -359,7 +361,7 @@ section {
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 2.5rem;
+    gap: 2rem;
     justify-content: space-around;
 }
 
@@ -405,15 +407,28 @@ article .icon {
     position: relative;
 }
 
+.projects-about-containers {
+    gap: 0.5rem; /* Adjust the gap between items */
+    margin-bottom: 0.5rem; /* Adjust the bottom margin */
+    margin-top: 0.5rem; /* Adjust the top margin */
+    display: flex; /* Ensure flexbox display */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.projects-about-containers .details-container {
+    width: 30%; /* Adjust width of each item */
+    height: 20%; /* Adjust height of each item */
+}
+
 .color-container {
     border-color: rgb(163,163,163);
     background: rgb(250,250);
 }
 
 .project-img {
-    border-radius: 2rem;
+    border-radius: 1rem;
     width: 90%;
-    height: 90%;
+    height: 150px;
 }
 
 .project-title {
@@ -441,37 +456,39 @@ article .icon {
     padding: 1rem;
     border-radius: 1rem;
     border: 0.1rem solid rgb(163, 163, 163);
-    height: 600px; 
 }
 
 .achievements-details-container .slide {
     position: relative;
     display: flex;
-    flex-direction: column;  
     justify-content: center;
-    align-items: flex-start;  
+    align-items: center;  
     width: 100%;  
     height: 100%;  
     z-index: 1; 
 }
 
+.achievements-details-container .slide-content-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-left: 5%;
+}
+
 .achievements-details-container .background-img {
-    position: absolute;
-    top: 0;  
-    left: 0;   
-    width: 100%;  
-    height: 100%; 
-    z-index: 0; 
-    filter: blur(2px);
+    width: 32%; /* Adjust the width as needed */
+    height: 270px;
 }
 
 .achievements-details-container .slide-content {
-    position: relative;
     color: black;
     text-align: left;
     z-index: 2; 
+    width: 60%; /* Adjust the width as needed */
     max-width: 100%;  
     padding: 65px; 
+    margin-right: 5%;
 }
 
 .achievements-details-container .slidearrow {
@@ -498,9 +515,9 @@ article .icon {
 
 .animated {
     animation: zoomInOut 0.7s ease-in-out forwards; 
-  }
+}
   
-  @keyframes zoomInOut {
+@keyframes zoomInOut {
     0% {
       opacity: 0;
       transform: scale(0); 
@@ -509,7 +526,17 @@ article .icon {
       opacity: 1;
       transform: scale(1); 
     }
-  } 
+}
+
+.achievements-details-container .overlay-gif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 3; /* Ensure it overlays the content */
+}
 
 /* VOLUNTEERING SECTION */
 
@@ -520,9 +547,8 @@ article .icon {
 .achievements-details-container .volunteeringSlide {
     position: relative;
     display: flex;
-    flex-direction: column;  
     justify-content: center;
-    align-items: flex-start;  
+    align-items: center;  
     width: 100%;  
     height: 100%;  
     z-index: 1; 
@@ -536,19 +562,13 @@ article .icon {
 
 .certificate-icon {
     cursor: pointer;
-    height: 4rem;
+    height: 7rem; /* Increased height */
+    width: 7rem;  /* Added width */
     transition: transform 0.2s ease-in-out;
 }
 
 .certificate-icon:hover {
     transform: scale(1.1);
-}
-
-.certifications-sub-title {
-    color: rgb(85, 85, 85);
-    font-weight: 600;
-    font-size: 1.75rem;
-    margin-bottom: 2rem;
 }
 
 .certifications-details-container {
@@ -562,24 +582,8 @@ article .icon {
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 2.5rem;
+    gap: 3rem;
     justify-content: space-around;
-}
-
-.certifications-article {
-    display: flex;
-    width: 10rem;
-    justify-content: space-around;
-    gap: 0.5rem;
-}
-
-.certifications-article .icon {
-    cursor: default;
-}
-
-.view-certificate {
-    border-top: 1px solid #ccc;
-    padding-top: 5px;
 }
 
 /* CONTACT SECTION */

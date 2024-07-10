@@ -145,3 +145,17 @@
     }
 }
 
+@media (max-width: 768px) {
+    .details-container img {
+        flex: 1 1 calc(50% - 20px); /* 2 images per row on smaller screens */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .details-container img {
+        flex: 1 1 calc(100% - 20px); /* 1 image per row on very small screens */
+        max-width: calc(100% - 20px);
+    }
+}
+
