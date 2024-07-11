@@ -118,7 +118,7 @@ cursor: default;
 }
 
 .menu-links.open {
-    max-height: 300px;
+    max-height: 500px;
 }
 
 .hamburger-icon.open span:first-child {
@@ -274,7 +274,6 @@ section {
 
 .text-container ul {
     list-style-type: disc; /* Use disc bullets */
-    margin-left: 40px; /* Add margin space for the bullets */
 }
 
 .text-container ul li {
@@ -415,11 +414,6 @@ article .icon {
     flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
-.projects-about-containers .details-container {
-    width: 30%; /* Adjust width of each item */
-    height: 20%; /* Adjust height of each item */
-}
-
 .color-container {
     border-color: rgb(163,163,163);
     background: rgb(250,250);
@@ -482,11 +476,7 @@ article .icon {
 }
 
 .achievements-details-container .slide-content {
-    color: black;
     text-align: left;
-    z-index: 2; 
-    width: 60%; /* Adjust the width as needed */
-    max-width: 100%;  
     padding: 65px; 
     margin-right: 5%;
 }

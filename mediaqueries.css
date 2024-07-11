@@ -1,4 +1,4 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
 #profile {
     height: 83vh;
     margin-bottom: 6rem;
@@ -59,7 +59,7 @@
         flex-wrap: wrap;
     }
     .contact-info-container {
-        margin: 0;
+        margin: 0.2rem;
     }
     .contact-info-container p, .nav-links li a {
         font-size: 1rem;
@@ -91,71 +91,82 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+/* Media query for max-width: 1200px */
+@media screen and (max-width: 1200px) {
+  /* Hide career icons in this media query */
+  .experience-details-container .career-icon {
+    display: none;
+  }
   
-    #achievements {
-      height: fit-content;
+  /* Adjust text container layout */
+  .experience-details-container .text-container {
+    width: 100%; /* Ensure text takes full width */
+    margin: 0 auto; /* Center align text */
+  }
+}
+
+/* Media query for max-width: 600px */
+@media screen and (max-width: 600px) {
+  /* Further adjustments for smaller screens */
+  .experience-details-container .text-container {
+    padding: 0 20px; /* Add padding to text for better readability */
+  }
+}
+
+/* Media query for max-width: 1200px */
+@media screen and (max-width: 1200px) {
+    .background-img {
+      display: none; /* Hide the background images */
     }
-  
-    .achievements-details-container {
-      padding: 1rem;
-      height: auto; 
-    }
-  
-    .achievements-details-container .slide {
-      width: 100%;
-      margin-bottom: 1rem; 
-    }
-    
-    .achievements-details-container .background-img {
-        width: 100%; 
-        height: auto; 
-        object-fit: cover; 
-        opacity: 1; 
-        filter: none;
-        border-radius: 1rem;
-        margin-bottom: 1rem;
-      }
   
     .achievements-details-container .slide-content {
-      font-size: 0.7rem;
-      padding: 1.7rem;
-      margin-top: 14rem;
+      padding: 0 33px; /* Reduce padding to utilize space better */
+      font-size: 0.8em; /* Adjust font size for better fit */
     }
-
-    .achievements-details-container .slidearrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        cursor: pointer;
-        z-index: 3; 
-        padding: 0.1rem;
-    }
-}
-
-  @media screen and (max-width: 400px) {
+  }
   
-    #volunteering {
-      height: fit-content;
+  /* Media query for max-width: 600px */
+  @media screen and (max-width: 600px) {
+    .background-img {
+        display: none; /* Hide the background images */
+      }
+      
+    .achievements-details-container .slide-content {
+      padding: 0 33px; /* Adjust padding for smaller screens */
+      font-size: 0.8em; /* Further reduce font size for smaller screens */
     }
+  }
   
-    .achievements-details-container .volunteeringSlide {
-      width: 100%;
-      margin-bottom: 1rem; 
+  /* Media query for max-width: 1200px */
+@media screen and (max-width: 1200px) {
+    #career .text-container ul li {
+        font-size: 0.8rem; /* Adjust font size for smaller screens */
+    }
+    #work .text-container ul li {
+        font-size: 0.8rem; /* Adjust font size for smaller screens */
     }
 }
 
-@media (max-width: 768px) {
-    .details-container img {
-        flex: 1 1 calc(50% - 20px); /* 2 images per row on smaller screens */
-        max-width: calc(50% - 20px);
+/* Media query for max-width: 600px */
+@media screen and (max-width: 600px) {
+    #career .text-container ul li {
+        font-size: 0.8rem; /* Adjust font size for even smaller screens */
+    }
+    #work .text-container ul li {
+        font-size: 0.8rem; /* Adjust font size for smaller screens */
     }
 }
 
-@media (max-width: 480px) {
-    .details-container img {
-        flex: 1 1 calc(100% - 20px); /* 1 image per row on very small screens */
-        max-width: calc(100% - 20px);
+/* Media query for max-width: 1200px */
+@media screen and (max-width: 1200px) {
+    #about .text-container p {
+        font-size: 0.8rem; /* Adjust font size for smaller screens */
     }
 }
 
+/* Media query for max-width: 600px */
+@media screen and (max-width: 600px) {
+    #about .text-container p {
+        font-size: 0.8rem; /* Adjust font size for even smaller screens */
+    }
+}
