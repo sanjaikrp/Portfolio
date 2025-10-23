@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Web Design Mastery | Sanjai</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__bar">
+        <a href="#"><span class="logo nav__logo">S</span> Sanjai</a>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-3-line"></i>
+        </div>
+      </div>
+
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact" class="btn">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn__large">Contact</a>
+    </nav>
+    <header class="section__container header__container" id="home">
+      <div class="header__image">
+        <img src="assets/Header_Profile.jpg" alt="header" />
+      </div>
+      <div class="header__content">
+        <div>
+          <h1>Sanjai<br />Software Developer</h1>
+        </div>
+        <p style="text-align: justify" class="section__description">
+          I’m a software developer passionate about building impactful digital
+          solutions. With 3 years of experience in full-stack development,
+          microservices, cloud computing, and AI-driven systems, I transform
+          ideas into clean, efficient, and scalable applications. For me, every
+          project is more than just code—it’s about crafting solutions that
+          inspire, perform, and make a lasting impact.
+        </p>
+
+        <div class="header__btn">
+          <a class="btn" href="#hireModal">Hire Me Now</a>
+        </div>
+
+        <div id="hireModal" class="overlay">
+          <div class="popup">
+            <h2>
+              Let's Work Together
+              <a class="close" href="#">&times;</a>
+            </h2>
+            <form id="hireForm" class="popup-form">
+              <input
+                type="text"
+                name="user_name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="text"
+                name="company_name"
+                placeholder="Employer | Organization"
+                required
+              />
+              <input
+                type="email"
+                name="user_email"
+                placeholder="Contact Email"
+                required
+              />
+              <input
+                type="text"
+                name="job"
+                placeholder="Job Title | Designation"
+                required
+              />
+              <textarea
+                name="description"
+                rows="4"
+                placeholder="Job Description"
+                required
+              ></textarea>
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Message (Optional)"
+              ></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="section__container about__container" id="about">
+      <div class="about__image">
+        <img src="assets/About_Profile.jpg" alt="about" class="about__img" />
+      </div>
+      <div class="about__content">
+        <h2 class="section__header">Bit About Me</h2>
+
+        <div class="about__grid">
+          <div class="service__card">
+            <img
+              src="./assets/experience.png"
+              alt="Experience Icon"
+              class="service__icon"
+            />
+            <h4>Experience</h4>
+            <p>3+ years</p>
+            <p>Software Engineer</p>
+          </div>
+          <div class="service__card">
+            <img
+              src="./assets/education.png"
+              alt="Education Icon"
+              class="service__icon"
+            />
+            <h4>Education</h4>
+            <p>B.E. Bachelor’s Degree</p>
+            <p>M.Sc. Master’s Degree</p>
+          </div>
+        </div>
+
+        <p style="text-align: justify" class="section__description">
+          Crafting Scalable and Intelligent Software Solutions: With over 3 years
+          of experience at
+          <a
+            href="https://www.odessainc.com/"
+            style="color: rgb(81, 170, 197)"
+            >Odessa Technologies</a
+          >, India (May 2021 – Sep 2024), I’ve contributed to shaping LeaseWave,
+          a globally adopted enterprise platform.
+        </p>
+        <p style="text-align: justify" class="section__description">
+          I earned my B.E. in Computer Science (2018 – 2022) from
+          <a
+            href="https://www.bitsathy.ac.in/"
+            style="color: rgb(81, 170, 197)"
+            >Bannari Amman Institute of Technology</a
+          >, India, and will be advancing my expertise through an M.Sc. in
+          Advanced Computer Science (Sep 2025 – Sep 2026) at the
+          <a href="https://www.leeds.ac.uk/" style="color: rgb(81, 170, 197)"
+            >University of Leeds</a
+          >, UK. For me, software engineering is more than problem-solving—it’s
+          about designing systems that endure, innovate, and inspire.
+        </p>
+
+        <div class="about__btn">
+          <a
+            href="./assets/Sanjai KRP - Grad Role - Resume.pdf"
+            target="_blank"
+            class="btn"
+            >Download CV</a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="section__container service__container" id="experience">
+      <h2 class="section__header">Explore my Experience</h2>
+
+      <div class="filter__menu">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="cloud">Cloud</button>
+        <button class="filter-btn" data-filter="others">Others</button>
+      </div>
+
+      <div class="service__grid">
+        <div class="experience__card" data-category="frontend">
+          <h4>HTML | CSS</h4>
+          <p>Experienced <span class="stars">★★★★☆</span></p>
+        </div>
+        <div class="experience__card" data-category="frontend">
+          <h4>JavaScript</h4>
+          <p>Experienced <span class="stars">★★★★☆</span></p>
+        </div>
+        <div class="experience__card" data-category="frontend">
+          <h4>React.js</h4>
+          <p>Intermediate <span class="stars">★★★☆☆</span></p>
+        </div>
+        <div class="experience__card" data-category="frontend">
+          <h4>Angular</h4>
+          <p>Intermediate <span class="stars">★★★☆☆</span></p>
+        </div>
+
+        <div class="experience__card" data-category="backend">
+          <h4>Java</h4>
+          <p>Experienced <span class="stars">★★★★☆</span></p>
+        </div>
+        <div class="experience__card" data-category="backend">
+          <h4>Spring Boot</h4>
+          <p>Experienced <span class="stars">★★★★☆</span></p>
+        </div>
+        <div class="experience__card" data-category="backend">
+          <h4>Python</h4>
+          <p>Experienced <span class="stars">★★★★☆</span></p>
+        </div>
+        <div class="experience__card" data-category="backend">
+          <h4>MySQL</h4>
+          <p>Experienced <span class="stars">★★★★☆</span></p>
+        </div>
+
+        <div class="experience__card" data-category="cloud">
+          <h4>AWS</h4>
+          <p>Intermediate <span class="stars">★★★☆☆</span></p>
+        </div>
+        <div class="experience__card" data-category="cloud">
+          <h4>Azure</h4>
+          <p>Intermediate <span class="stars">★★★☆☆</span></p>
+        </div>
+        <div class="experience__card" data-category="cloud">
+          <h4>Docker</h4>
+          <p>Intermediate <span class="stars">★★★☆☆</span></p>
+        </div>
+
+        <div class="experience__card" data-category="others">
+          <h4>Git | GitHub</h4>
+          <p>Experienced <span class="stars">★★★★☆</span></p>
+        </div>
+        <div class="experience__card" data-category="others">
+          <h4>Linux</h4>
+          <p>Intermediate <span class="stars">★★★☆☆</span></p>
+        </div>
+        <div class="experience__card" data-category="others">
+          <h4>VS Code</h4>
+          <p>Experienced <span class="stars">★★★★☆</span></p>
+        </div>
+        <div class="experience__card" data-category="others">
+          <h4>DSA</h4>
+          <p>Experienced <span class="stars">★★★★☆</span></p>
+        </div>
+      </div>
+    </section>
+    <section class="section__container work__container" id="work">
+      <h2 class="section__header">Discover my Work Experience</h2>
+      <div class="timeline__vertical">
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="work__card">
+            <h4>June 2022 - September 2024</h4>
+            <a href="https://www.odessainc.com/" target="_blank">
+              <img
+                src="./assets/Odessa.png"
+                alt="Experience icon"
+                class="work__icon"
+              />
+            </a>
+            <p>Bengaluru, Karnataka, India</p>
+            <h4>Software Engineer</h4>
+            <p style="text-align: justify" class="work__description">
+              Spearheaded process optimizations that improved project workflows
+              by 30%, streamlining development lifecycles and enhancing delivery
+              speed. Stepped into a leadership role for 6 months, guiding a team
+              to reduce critical bugs and improve system stability, resulting in
+              a notable boost in product reliability and client confidence.
+              Designed and implemented scalable solutions within the LeaseWave
+              ecosystem, enhancing functionality, performance, and user
+              experience across global clients. Owned and executed over 90% of
+              product change requests, ensuring timely delivery of client-driven
+              features while maintaining high code quality standards. Championed
+              collaborative problem-solving, mentoring peers, and fostering
+              knowledge-sharing practices that strengthened overall team
+              productivity.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="work__card">
+            <h4>May 2021 - May 2022</h4>
+            <a href="https://www.odessainc.com/" target="_blank">
+              <img
+                src="./assets/Odessa.png"
+                alt="Experience icon"
+                class="work__icon"
+              />
+            </a>
+            <p>Bengaluru, Karnataka, India</p>
+            <h4>Software Engineer Intern</h4>
+            <p style="text-align: justify" class="work__description">
+              Collaborated with cross-functional teams to deliver project
+              requirements, contributing to a 40% improvement in overall
+              efficiency through effective teamwork and optimized task
+              execution. Proactively identified and resolved bugs, accelerating
+              critical issue fixes and ensuring the timely delivery of stable
+              software updates. Gained end-to-end exposure in development,
+              debugging, testing, and deployment, applying academic knowledge to
+              practical enterprise-level projects. Acted as a client-facing
+              liaison during critical issue escalations, ensuring clear
+              communication, rapid resolution, and sustained client
+              satisfaction. Demonstrated adaptability by taking ownership of key
+              tasks, driving changes, and supporting continuous project
+              momentum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section__container portfolio__container" id="portfolio">
+      <h2 class="section__header">My Projects</h2>
+      <p style="text-align: justify" class="section__description">
+        A collection of projects blending intelligent systems and practical
+        applications, reflecting my expertise in full-stack development,
+        problem-solving, and innovative software design. Each project reflects
+        my passion for creating impactful and innovative digital experiences.
+      </p>
+
+      <div class="portfolio__grid">
+        <div class="portfolio__card">
+          <img src="assets/ObjectDetection.gif" alt="portfolio" />
+          <div class="portfolio__overlay">
+            <h4>Object Detection</h4>
+            <a
+              href="https://github.com/sanjaikrp/Object-Detection-OpenCV"
+              target="_blank"
+            >
+              <i class="ri-github-fill"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+        <div class="portfolio__card">
+          <img src="assets/TaxiBooking.gif" alt="portfolio" />
+          <div class="portfolio__overlay">
+            <h4>Taxi Booking</h4>
+            <a
+              href="https://github.com/sanjaikrp/Taxi-Booking"
+              target="_blank"
+            >
+              <i class="ri-github-fill"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+        <div class="portfolio__card">
+          <img src="assets/StackFrontend.gif" alt="portfolio" />
+          <div class="portfolio__overlay">
+            <h4>Stack Frontend</h4>
+            <a
+              href="https://github.com/sanjaikrp/StackOverflow-Frontend"
+              target="_blank"
+            >
+              <i class="ri-github-fill"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+        <div class="portfolio__card">
+          <img src="assets/WeatherBot.gif" alt="portfolio" />
+          <div class="portfolio__overlay">
+            <h4>Weather Bot</h4>
+            <a
+              href="https://github.com/sanjaikrp/Weather-App"
+              target="_blank"
+            >
+              <i class="ri-github-fill"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+        <div class="portfolio__card">
+          <img src="assets/TrainBooking.gif" alt="portfolio" />
+          <div class="portfolio__overlay">
+            <h4>Train Booking</h4>
+            <a
+              href="https://github.com/sanjaikrp/Train-Booking"
+              target="_blank"
+            >
+              <i class="ri-github-fill"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+        <div class="portfolio__card">
+          <img src="assets/StackBackend.gif" alt="portfolio" />
+          <div class="portfolio__overlay">
+            <h4>Stack Backend</h4>
+            <a
+              href="https://github.com/sanjaikrp/StackOverflow-Backend"
+              target="_blank"
+            >
+              <i class="ri-github-fill"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio__banner">
+        <div class="portfolio__banner__card">
+          <span><i class="ri-folder-chart-fill"></i></span>
+          <h4>10+ Projects</h4>
+          <p>Built with Real-World Applications</p>
+        </div>
+        <div class="portfolio__banner__card">
+          <span><i class="ri-stack-fill"></i></span>
+          <h4>Full-Stack Expertise</h4>
+          <p>From Frontend to Backend</p>
+        </div>
+        <div class="portfolio__banner__card">
+          <span><i class="ri-lightbulb-flash-fill"></i></span>
+          <h4>Practical Impact</h4>
+          <p>Showcasing Problem-Solving Skills</p>
+        </div>
+      </div>
+    </section>
+    <section class="section__container service__container" id="achievements">
+      <h2 class="section__header">View my Achievements</h2>
+
+      <div class="achievements__slideshow">
+        <div class="achievements__card">
+          <img src="./assets/Achievement-1.png" alt="Achievements Icon" />
+          <div class="achievements__content">
+            <h4>Web Desigining</h4>
+            <p style="hyphens: auto">
+              During my internship at Litz Tech, I designed and developed an
+              intuitive Developer Communication UI that streamlined
+              collaboration and boosted productivity. This contribution earned
+              me the Star Performer Award and honed my UI/UX design skills.
+            </p>
+          </div>
+        </div>
+
+        <div class="achievements__card">
+          <img src="./assets/Achievement-2.png" alt="Achievements Icon" />
+          <div class="achievements__content">
+            <h4>Math Club</h4>
+            <p style="hyphens: auto">
+              Honored with the Appreciation Award by the Math Club, BIT, for
+              leading workshops, competitions, and study sessions that enhanced
+              mathematical engagement and academic growth among peers.
+            </p>
+          </div>
+        </div>
+
+        <div class="achievements__card">
+          <img src="./assets/Achievement-3.webp" alt="Achievements Icon" />
+          <div class="achievements__content">
+            <h4>Cyber Security</h4>
+            <p style="hyphens: auto">
+              Completed a Cybersecurity course with Lucideous, gaining practical
+              knowledge in threat detection, vulnerability assessment, and
+              digital asset protection. Equipped with advanced skills to tackle
+              security challenges and safeguard digital environments.
+            </p>
+          </div>
+        </div>
+
+        <div class="achievements__card">
+          <img src="./assets/Volunteering-1.png" alt="Achievements Icon" />
+          <div class="achievements__content">
+            <h4>NGO Way For Life</h4>
+            <p style="hyphens: auto">
+              Partnered with NGO Way For Life to produce 50+ solar lamps as
+              sustainable alternatives to kerosene, promoting eco-friendly
+              energy solutions. This initiative showcased innovation, social
+              responsibility, and our commitment to creating lasting community
+              impact.
+            </p>
+          </div>
+        </div>
+
+        <div class="achievements__card">
+          <img src="./assets/Volunteering-2.png" alt="Achievements Icon" />
+          <div class="achievements__content">
+            <h4>Leo Club</h4>
+            <p style="hyphens: auto">
+              Collaborated with the Leo Club on large-scale cleaning drives and
+              awareness campaigns, fostering environmental sustainability and
+              community resilience. Promoted sustainable practices while
+              inspiring collective responsibility toward combating global
+
+              warming.
+            </p>
+          </div>
+        </div>
+
+        <div class="achievements__card">
+          <img src="./assets/Volunteering-3.png" alt="Achievements Icon" />
+          <div class="achievements__content">
+            <h4>Disaster Relief</h4>
+            <p style="hyphens: auto">
+              Led a fundraising campaign with the Leo Club during the 2018 Gaja
+              cyclone crisis, raising ₹2,50,000 to support vital relief efforts
+              in Tamil Nadu. Demonstrated leadership, teamwork, and commitment
+              to humanitarian service.
+            </p>
+          </div>
+        </div>
+
+        <div class="achievements__card">
+          <img src="./assets/Volunteering-4.png" alt="Achievements Icon" />
+          <div class="achievements__content">
+            <h4>Animal Welfare</h4>
+            <p style="hyphens: auto">
+              Spearheaded community initiatives for animal welfare, organizing
+              awareness and fundraising campaigns to support shelters and rescue
+              operations. Successfully coordinated drives that secured vital
+              resources for animal care and rehabilitation.
+            </p>
+          </div>
+        </div>
+
+        <button class="arrow left">&#10094;</button>
+        <button class="arrow right">&#10095;</button>
+      </div>
+    </section>
+    <section
+      class="certifications_section__container service__container"
+      id="certifications"
+    >
+      <h2 class="section__header">See my Certifications</h2>
+
+      <div class="certifications__grid">
+        <div class="certifications__card">
+          <img
+            src="assets/Sanjai KRP_InternshipCompletionLetter_page-0001.jpg"
+            alt="certifications"
+          />
+          <div class="certifications__overlay">
+            <h4>Odessa</h4>
+            <p>Internship</p>
+            <a
+              href="./assets/Sanjai KRP_InternshipCompletionLetter.pdf"
+              target="_blank"
+            >
+              <i class="ri-eye-line"></i>View Certificate
+            </a>
+          </div>
+        </div>
+
+        <div class="certifications__card">
+          <img
+            src="assets/027_SoftrixCertificate_page-0001.jpg"
+            alt="certifications"
+          />
+          <div class="certifications__overlay">
+            <h4>Softrix</h4>
+            <p>Internship</p>
+            <a href="./assets/027_SoftrixCertificate.pdf" target="_blank">
+              <i class="ri-eye-line"></i>View Certificate
+            </a>
+          </div>
+        </div>
+
+        <div class="certifications__card">
+          <img
+            src="assets/028_SriKrishnaCertificate_page-0001.jpg"
+            alt="certifications"
+          />
+          <div class="certifications__overlay">
+            <h4>AVANTAA</h4>
+            <p>Augmented Reality</p>
+            <a href="./assets/028_SriKrishnaCertificate.pdf" target="_blank">
+              <i class="ri-eye-line"></i>View Certificate
+            </a>
+          </div>
+        </div>
+
+        <div class="certifications__card">
+          <img
+            src="assets/035_PythonWorkshop_page-0001.jpg"
+            alt="certifications"
+          />
+          <div class="certifications__overlay">
+            <h4>BIT</h4>
+            <p>Python Workshop</p>
+            <a href="./assets/035_PythonWorkshop.pdf" target="_blank">
+              <i class="ri-eye-line"></i>View Certificate
+            </a>
+          </div>
+        </div>
+
+        <div class="certifications__card">
+          <img
+            src="assets/032_MathClubCertificate_page-0001.jpg"
+            alt="certifications"
+          />
+          <div class="certifications__overlay">
+            <h4>BIT</h4>
+            <p>Maths Club</p>
+            <a href="./assets/032_MathClubCertificate.pdf" target="_blank">
+              <i class="ri-eye-line"></i>View Certificate
+            </a>
+          </div>
+        </div>
+
+        <div class="certifications__card">
+          <img
+            src="assets/034_WebDesiginingCertificate_page-0001.jpg"
+            alt="certifications"
+          />
+          <div class="certifications__overlay">
+            <h4>Litz Tech</h4>
+            <p>Internship</p>
+            <a href="./assets/034_WebDesiginingCertificate.pdf" target="_blank">
+              <i class="ri-eye-line"></i>View Certificate
+            </a>
+          </div>
+        </div>
+
+        <div class="certifications__card">
+          <img
+            src="assets/029_LucideusCertificate_page-0001.jpg"
+            alt="certifications"
+          />
+          <div class="certifications__overlay">
+            <h4>Lucideus</h4>
+            <p>Cyber Security</p>
+            <a href="./assets/029_LucideusCertificate.pdf" target="_blank">
+              <i class="ri-eye-line"></i>View Certificate
+            </a>
+          </div>
+        </div>
+
+        <div class="certifications__card">
+          <img
+            src="assets/031_GCTCertificate_page-0001.jpg"
+            alt="certifications"
+          />
+          <div class="certifications__overlay">
+            <h4>GCT</h4>
+            <p>Machine Learning</p>
+            <a href="./assets/031_GCTCertificate.pdf" target="_blank">
+              <i class="ri-eye-line"></i>View Certificate
+            </a>
+          </div>
+        </div>
+
+        <div class="certifications__card">
+          <img
+            src="assets/026_DegreeCertificate_page-0001.jpg"
+            alt="certifications"
+          />
+          <div class="certifications__overlay">
+            <h4>BIT</h4>
+            <p>Degree Certificate</p>
+            <a href="./assets/026_DegreeCertificate.pdf" target="_blank">
+              <i class="ri-eye-line"></i>View Certificate
+            </a>
+          </div>
+        </div>
+
+        <div class="certifications__card">
+          <img
+            src="assets/030_ManifestCertificate_page-0001.jpg"
+            alt="certifications"
+          />
+          <div class="certifications__overlay">
+            <h4>BIT</h4>
+            <p>Manifest 2020</p>
+            <a href="./assets/030_ManifestCertificate.pdf" target="_blank">
+              <i class="ri-eye-line"></i>View Certificate
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section__container contact__container" id="contact">
+      <div class="logo">S</div>
+      <h2 class="section__header">Let's Talk With Me!</h2>
+      <p class="section__description">
+        Open to connecting with curious minds and diving into exciting
+        projects—let's turn ideas into reality!
+      </p>
+
+      <div class="contact__socials">
+        <a href="https://x.com/Sanjai_KRP/"
+          ><i class="ri-twitter-fill"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/sanjaikrp/"
+          ><i class="ri-linkedin-fill"></i
+        ></a>
+        <a href="https://github.com/sanjaikrp"
+          ><i class="ri-github-line"></i
+        ></a>
+        <a href="mailto:krp.sanjai@gmail.com"
+          ><i class="ri-mail-fill"></i
+        ></a>
+        <a href="tel:+447352670216"><i class="ri-phone-line"></i></a>
+      </div>
+    </section>
+    <footer class="footer">
+      Copyright © 2025 Sanjai. All rights reserved.
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="main.js"></script>
+    </body>
+</html>
